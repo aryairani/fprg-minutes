@@ -28,7 +28,7 @@ that values won't change; it may inline constants, avoid locks, reorder code, fu
 Beyond the improved reasoning that comes from knowing that data can't change out from under you, 
 programming with a sophisticated type system becomes a game of setting up rules to cause the
 compiler to prevent you from creating an incorrect program.  I think of it as a collaboration between the programmer
-and the compiler, where the programmer set out rules about how the program should operate, 
+and the compiler, where the programmer set out rules about how the program must be pieced together, 
 and asks the compiler to alert him if he ever breaks any.
 
 #### Example 1:
