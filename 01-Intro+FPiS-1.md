@@ -77,7 +77,7 @@ and the more you can do to narrow the space of possible programs around the one 
 
 ## What is FP used for?
   Any application where errors are more expensive than learning FP is. (financial, aeronautics, telecom)
-  Good news is: the learning curve is a one-time cost, not per-project.
+  The good news is: the learning curve is a one-time cost, not per-project.
 
 ## Scala is imperfect; what are some flaws?
 - expectations too high
