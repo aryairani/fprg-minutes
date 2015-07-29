@@ -85,6 +85,12 @@ and the more you can do to narrow the space of possible programs around the one 
 - local, left-to-right type inference sometimes can't infer what I want, requiring explicit type annotations (compare to global, backtracking type inference in Haskell, OCaml)
 - type inferencer sometimes infers surprising/annoying types (e.g. inferring `Any` or `Nothing` due to variance rules, without warnings)
 
+## Issues around developing with FP?
+- Unlearning curve
+- FP support in JVM tools is behind
+    - no tailcall support on JVM, so it's necessary to do gymnastics around that
+    - debugger can handle functional code, but wasn't designed for it, unlike Haskell/OCaml debuggers; emphasizes the wrong aspects of execution
+
 ## Can I have a different definition of pure?
 - What if I don't care about the side effects of logging?
 - Why is `new Foo` considered pure, when it's changing the structure of the heap?
