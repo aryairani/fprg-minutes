@@ -49,9 +49,9 @@ def head[A](list: List[A]): A = /* ... */
 ```
 Rules:
 
-1. `head` must receive a `List[A]`.
-2. `head` must be called in a position that can receive an `A`.
-3. If `head` returns, the result of `A` is one of the elements of `list`. (Where else could the value come from?)
+1. `head[A]` must receive a `List[A]`.
+2. `head[A]` must be called in a position that can receive an `A`.
+3. If `head[A]` returns, the result of `A` is one of the elements of `list`. (Where else could the value come from?)
 
 for any type `A`.
 
@@ -61,9 +61,9 @@ def foo[A](a: A): A = /* ... */
 ```
 Rules:
 
-1. `head` must receive an `A`.
-2. `head` must be called in a position that can receive an `A`.
-3. If `head` returns, the result of `A` is the argument `a`. (Same reasoning as above.)
+1. `foo[A]` must receive an `A`.
+2. `foo[A]` must be called in a position that can receive an `A`.
+3. If `foo` returns, the result of `A` is the argument `a`. (Same reasoning as above.)
 
 for any type `A`.
 
