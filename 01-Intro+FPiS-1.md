@@ -10,7 +10,7 @@ I was looking for a language to write programs that were:
 - necessarily correct\*\*\*
 
 I played with Haskell, OCaml; was deterred by an inability to understand the compiler errors.
-I gave up and went back to Perl. ;-)
+I gave up and went back to Perl. :wink:
 
 I found Scala 5 years later; the transition from OOP Java to FP Scala could be done more gradually.
 Scala is called a "scalable language", because "it scales with you as you learn."  
