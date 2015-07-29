@@ -84,7 +84,7 @@ and the more you can do to narrow the space of possible programs around the one 
 - experimental features (understandably) aren't well documented
 - complaints about Scala's standard library (popular 3rd-party libraries help)
 - local type inference sometimes can't infer what I want (compare to global, backtracking type inference in Haskell, OCaml)
-- type inferencer sometimes infers surprising/annoying types
+- type inferencer sometimes infers surprising/annoying types (e.g. inferring `Any` or `Nothing` due to variance rules)
 
 ## Can I have a different definition of pure?
 - What if I don't care about the side effects of logging?
