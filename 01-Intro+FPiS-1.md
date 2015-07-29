@@ -80,11 +80,10 @@ and the more you can do to narrow the space of possible programs around the one 
   The good news is: the learning curve is a one-time cost, not per-project.
 
 ## Scala is imperfect; what are some flaws?
-- expectations too high
 - experimental features (understandably) aren't well documented
 - complaints about Scala's standard library (popular 3rd-party libraries help)
-- local type inference sometimes can't infer what I want (compare to global, backtracking type inference in Haskell, OCaml)
-- type inferencer sometimes infers surprising/annoying types (e.g. inferring `Any` or `Nothing` due to variance rules)
+- local, left-to-right type inference sometimes can't infer what I want, requiring explicit type annotations (compare to global, backtracking type inference in Haskell, OCaml)
+- type inferencer sometimes infers surprising/annoying types (e.g. inferring `Any` or `Nothing` due to variance rules, without warnings)
 
 ## Can I have a different definition of pure?
 - What if I don't care about the side effects of logging?
