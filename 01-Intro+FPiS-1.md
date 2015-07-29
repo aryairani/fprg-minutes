@@ -61,7 +61,7 @@ def foo[A](a: A): A = /* ... */
 ```
 Rules:
 
-1. `head` must receive a `List[A]`.
+1. `head` must receive an `A`.
 2. `head` must be called in a position that can receive an `A`.
 3. If `head` returns, the result of `A` is the argument `a`. (Same reasoning as above.)
 
