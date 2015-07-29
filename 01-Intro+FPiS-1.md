@@ -10,19 +10,21 @@ I was looking for a language to write programs that were:
 - necessarily correct\*\*\*
 
 I played with Haskell, OCaml; was deterred by an inability to understand the compiler errors.
-I decided that my holy grail of languages didn't exist, and went back to Perl. ;-)
+I gave up and went back to Perl. ;-)
 
 I found Scala 5 years later; the transition from OOP Java to FP Scala could be done more gradually.
-Scala is called a "scalable language", because "it scales with you as you learn."  I still get mad at the compiler errors sometimes though.
+Scala is called a "scalable language", because "it scales with you as you learn."  
 
-### \* "High-level": 
+Using pure or mostly-pure FP on longer-term projects has been super rewarding.  A major feature change is a lot of work, but the compiler tells you every spot that hasn't been made to be consistent, and once the compiler is satisfied, you often have a complex system that, defying all intuition, works correctly on the first run.  I still get mad at the compiler errors sometimes though.
+
+### \* "High-level"
 Well-typed FP has its own set of programming patterns that are thought by some to more naturally express computation abstractions.  This is vague, but the book gets into them in Chapters 9–11.
 
-### \*\* "Automatically Optimized":
+### \*\* "Automatically Optimized"
 FP effectively places restrictions on how your code works.  With these restrictions, the compiler can prove 
 that values won't change; it may inline constants, avoid locks, reorder code, fuse loops, and more great stuff.
 
-### \*\*\* "Necessarily Correct":
+### \*\*\* "Necessarily Correct"
 Beyond the improved reasoning that comes from knowing that data can't change out from under you, 
 programming with a sophisticated type system becomes a game of setting up rules to cause the
 compiler to prevent you from creating an incorrect program.  I think of it as a collaboration between the programmer
