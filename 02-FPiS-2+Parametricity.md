@@ -12,7 +12,7 @@ For simple functions like `fib` or `factorial`, it's not too hard to get them ri
 
 ## No, I mean, would I prefer a tail-recursive version to a non-tail-recursive version for reasons other than speed and constant stack space?
 
-Oh --- no, it's primarily about stack space and secondarily about speed.
+Oh, no.  It's for stack space and speed.
 
 # Parametricity
 
