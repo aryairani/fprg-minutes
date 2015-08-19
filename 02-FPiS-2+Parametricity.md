@@ -31,9 +31,9 @@ We flipped through Tony Morris's slides on [Parametricity](http://tonymorris.git
     * `def i[A]: A => List[A]`
         * returns its argument, repeated a constant number of times
     * `def j[A,B]: A => B`
-        * is an error
+        * is uninhabited (no legal implementation)
     * `def k[A]: Int => A`
-        * is also an error
+        * is also uninhabited
     * `def m[A,B](a: A, p: (A,A) => B): B`
         *  it's implementation must be `p(a,a)`
 
