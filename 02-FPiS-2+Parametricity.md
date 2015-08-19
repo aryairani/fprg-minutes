@@ -17,7 +17,7 @@ Oh, no.  It's for stack space and speed.
 # Tail recursion
 There were some questions after class about writing tail-recursion in general.
 
-A function is tail-recursive if the only the time it calls itself, it doesn't do any additional processing on the result of that call.  So:
+A function is tail-recursive if, when it calls itself, it doesn't do any additional processing on the result of that call.  So:
 
 ```scala
 def hello(x: Int): String = 
@@ -28,12 +28,12 @@ is tail recursive, but
 
 ```scala
 def HELLO(x: Int): String = 
-  if (x < 5) "HELLO" else (HELLO(x-1) + "!")
+  if (x < 5) "HELLO" else HELLO(x-1) + "!"
 ```
 
 is not, because it calls itself and then does something more with the answer first (append the "!").  Tail-call optimization works by throwing away the current stack frame before recursing, but it can't if it needs to come back and do more work after.
 
-This version is tail recursive, and carries the remaining work to do forward with it as a parameter, instead of returning to the previous level to finish.
+`HELLO2` is tail recursive, and carries the remaining work to do forward with it as a parameter, instead of returning to the previous level to finish.
 
 ```scala
 def HELLO2(x: Int, suffix: String): String = 
