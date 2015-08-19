@@ -22,7 +22,7 @@ We flipped through Tony Morris's slides on [Parametricity](http://tonymorris.git
 
 * When we can assume pure functions, then type signatures tell us a lot about what a function can or can't do:
     * `def f: Int => Int` 
-        * `f` is one of (2<sup>32</sup>)<sup>(2<sup>32</sup>)</sup> possible mappings from `Int` to `Int`.          
+        * `f` is one of (2<sup>32</sup>)<sup>(2<sup>32</sup>)</sup> possible mappings from `Int` to `Int`.  (*see below)
     * `def g[A]: A => A` 
         * its implementation must be `(a: A) => a`
         * i.e. it returns its argument
@@ -34,11 +34,11 @@ We flipped through Tony Morris's slides on [Parametricity](http://tonymorris.git
         * is an error
     * `def k[A]: Int => A`
         * is also an error
-    * `def m[A,B](a: A, f: (A,A) => B): B`
-        *  it's implementation must be `f(a,a)`
+    * `def m[A,B](a: A, p: (A,A) => B): B`
+        *  it's implementation must be `p(a,a)`
 
 * Scala, like most (but not all) languages, includes a handful of ways of making a liar out of the type signature (our book probably doesn't mention them); we will try to avoid them.  Apart from these "escape hatches", the compiler requires the type signatures to be true --- much more reliable than identifier names or comments.
 
-With respect to `def f: Int => Int` above: This doesn't sound like much information, but (2<sup>32</sup>)<sup>(2<sup>32</sup>)</sup> is insignificant compared to the number of implementations an impure function with the same signature can have.  Because of this, we're not used to type signatures telling us much at all.  In typed FP though, we rely on them tremendously; they are the preferred form of documentation, because they are always true.
+\*With respect to `def f: Int => Int` above: This doesn't sound like much information, but (2<sup>32</sup>)<sup>(2<sup>32</sup>)</sup> is insignificant compared to the number of implementations an impure function with the same signature can have.  Because of this, we're not used to type signatures telling us much at all.  In typed FP though, we rely on them tremendously; they are the preferred form of documentation, because they are always true.
     
 We started on Tony Morris's [parametricity exercises](https://github.com/refried/parametricity-exercises/blob/master/parametricity.scala), but had some trouble because they refer to data structures and concepts we haven't covered yet: `Option` (Sec 4.3), `Either` (Sec 4.4), property-testing (Chapter 8), higher-kinded types (Sec 10.5), Monads (Chapter 11).
