@@ -9,16 +9,16 @@ I was looking for a language to write programs that were:
 - automatically optimized\*\*
 - necessarily correct\*\*\*
 
-I played with Haskell, OCaml; was deterred by an inability to understand the compiler errors.
+I played with Haskell, OCaml; was deterred by my inability to understand the compiler errors.
 I gave up and went back to Perl. :wink:
 
 I found Scala 5 years later; the transition from OOP Java to FP Scala could be done more gradually.
-Scala is called a "scalable language", because "it scales with you as you learn."  
+Scala is said to be a "scalable language", because "it scales with you as you learn."  
 
 Using pure or mostly-pure FP on longer-term projects has been super rewarding.  A major feature change is a lot of work, but the compiler tells you every spot that hasn't been made to be consistent, and once the compiler is satisfied, you often have a complex system that, defying all intuition, works correctly on the first run.  I still get mad at the compiler errors sometimes though.
 
 ### \* "High-level"
-Well-typed FP has its own set of programming patterns that are thought by some to more naturally express computation abstractions.  This is vague, but the book gets into them in Chapters 9–11.
+Well-typed FP has its own set of programming patterns that are thought by some to more naturally express computation abstractions.  The previous sentence is vague, but the book gets into them in Chapters 9–11.
 
 ### \*\* "Automatically Optimized"
 FP effectively places restrictions on how your code works.  With these restrictions, the compiler can prove 
